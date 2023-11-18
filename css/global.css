@@ -35,11 +35,15 @@ nav {
 }
 
 .menu__item {
-  width: 210px;
+  width: 180px;
   text-align: center;
   line-height: 50px;
   list-style: none;
   padding: 0 30px;
+}
+
+.menu__item:hover {
+  background-color: #484b4e;
 }
 
 .menu__link {
@@ -51,10 +55,6 @@ nav {
 .menu__link {
   display: block;
   padding: 0px;
-}
-
-.menu__link:hover {
-  background-color: #484b4e;
 }
 
 #btn-mobile {
@@ -96,11 +96,11 @@ footer {
   .menu__item {
     width: 100%;
     text-align: left;
+    padding: 2px 20px;
   }
 
   .menu__link {
-    padding: 10px;
-    margin: 0 15px;
+    padding: 0 5px;
     border-bottom: solid 1px #ffffff1c;
   }
 
@@ -122,20 +122,19 @@ footer {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
-    .menu__item {
-      width: 145px;
-      font-size: 15px;
-    }
-    #logo {
-      margin-top: 10px;
-      width: 100px;
-    }
+  .menu__item {
+    width: 145px;
+    font-size: 15px;
   }
-
-  @media screen and (max-width: 599px){
-    footer p{
-        font-size: 15px;
-        text-align: center;
-    }
+  #logo {
+    margin-top: 10px;
+    width: 100px;
   }
+}
 
+@media screen and (max-width: 599px) {
+  footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
