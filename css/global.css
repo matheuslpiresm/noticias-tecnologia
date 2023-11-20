@@ -71,7 +71,7 @@ footer {
   margin-top: auto;
 }
 
-/* Responsividade do menu */
+/* Responsividade do menu
 @media screen and (max-width: 1024px) {
   #logo {
     display: none;
@@ -125,6 +125,81 @@ footer {
   .menu__item {
     width: 145px;
     font-size: 15px;
+  }
+  #logo {
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+} */
+
+
+/* Responsividade do menu */
+@media screen and (max-width: 768px) {
+  #logo {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    height: 0;
+    transition: 0.8s;
+    background-color: #1d2228;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  nav.active .menu {
+    height: 100vh;
+  }
+
+  .menu__item {
+    width: 100%;
+    text-align: left;
+    padding: 2px 20px;
+  }
+
+  .menu__link {
+    padding: 0 5px;
+    border-bottom: solid 1px #ffffff1c;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 8px 10px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    gap: 8px;
+  }
+
+  #hamburger {
+    width: 40px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1099px) {
+
+  .menu{
+    align-items: left;
+  }
+  .menu__item {
+    width: 110px;
+    font-size: 15px;
+    padding: 20px;
+    margin: 0 5px;
   }
   #logo {
     margin-top: 10px;
