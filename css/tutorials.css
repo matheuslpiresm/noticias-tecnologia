@@ -1,0 +1,45 @@
+.destaque {
+    width: 100%;
+    margin: 2px;
+    display: flex;
+    position: relative;
+    height: 400px;
+
+  }
+  
+  .destaque:hover {
+    cursor: pointer;
+  }
+  
+  .destaque__maior {
+    width: 50%;
+    margin: 2px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #787878;
+  }
+  
+  .destaques__menores{
+    width: 50%;
+  }
+
+  .destaque__menor {
+    height: 196px;
+    margin: 2px 0 4px 0;
+    position: relative;
+    border-radius: 10px;
+    background-color: #787878;
+  }
+  
+  .destaque__titulo {
+    position: absolute;
+    color: #fff;
+    bottom: 2%;
+    left: 2%;
+    font-size: 19px;
+  }
+  
+  .destaque__menor__titulo {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
