@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.content__img {
+    width: 50%;
+    height: 500px;
+    background-color: rgb(95, 96, 96);
+}
+
+.content__form {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(201, 201, 201);
+}
+
+.form__title {
+    font-size: 25px;
+    text-align: left;
+}
+
+.form__input {
+    margin: 10px;
+}
+
+.form__input label {
+    display: block;
+}
+
+.form__input input,
+.form__input textarea {
+    width: 300px;
+}
+
+.form__input input {
+    height: 25px;
+    border: none;
+}
+
+.form__btn {
+    width: 100px;
+    height: 30px;
+
+}
