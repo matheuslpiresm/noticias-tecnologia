@@ -1,28 +1,30 @@
+// Conteudo das materias 
 const conteudoMaterias = [
 
-{
-    imagem: "img/materia-4.png",
-    titulo: "Como tirar uma boa foto da Lua com um iPhone?",
-    descricao: "Com certeza você já tentou tirar fotos da lua com seu celular, e com certeza já deve ter se frustrado com o resultado.  Eventos como super-luas, eclipses lunares e até a mensal lua cheia atraem os olhos da humanidade para céus desde sempre."
+    {
+        imagem: "img/materia-1.png",
+        titulo: "Como tirar uma boa foto da Lua com um iPhone?",
+        descricao: "Com certeza você já tentou tirar fotos da lua com seu celular, e com certeza já deve ter se frustrado com o resultado.  Eventos como super-luas, eclipses lunares e até a mensal lua cheia atraem os olhos da humanidade para céus desde sempre."
 
-},
+    },
 
-{
-    imagem: "img/materia-5.jpg",
-    titulo: "O que é Deep Voice e como se proteger de golpes com voz clonada",
-    descricao: "A era digital tem sido marcada por avanços extraordinários em diversas áreas, e a síntese de voz não é exceção. Uma tecnologia que ganha destaque nesse cenário é o “Deep Voice”, um sistema de geração de voz que utiliza técnicas avançadas de aprendizado profundo para reproduzir vozes extremamente realistas."
-},
+    {
+        imagem: "img/materia-5.jpg",
+        titulo: "O que é Deep Voice e como se proteger de golpes com voz clonada",
+        descricao: "A era digital tem sido marcada por avanços extraordinários em diversas áreas, e a síntese de voz não é exceção. Uma tecnologia que ganha destaque nesse cenário é o “Deep Voice”, um sistema de geração de voz que utiliza técnicas avançadas de aprendizado profundo para reproduzir vozes extremamente realistas."
+    },
 
-{
-    imagem: "img/materia-6.jpg",
-    titulo: "Como usar chat por voz no ChatGPT?",
-    descricao: "O ChatGPT implementou recentemente uma nova funcionalidade ao seu serviço gratuito: a possibilidade de interagir por voz com a inteligência artificial. O processo é parecido com a utilização de uma Alexa, onde o usuário realiza uma pergunta ou comando e uma voz responde pelo alto-falante do dispositivo."
-}
+    {
+        imagem: "img/materia-6.jpg",
+        titulo: "Como usar chat por voz no ChatGPT?",
+        descricao: "O ChatGPT implementou recentemente uma nova funcionalidade ao seu serviço gratuito: a possibilidade de interagir por voz com a inteligência artificial. O processo é parecido com a utilização de uma Alexa, onde o usuário realiza uma pergunta ou comando e uma voz responde pelo alto-falante do dispositivo."
+    }
 
 ];
 
 const content = document.querySelector(".materias");
 
+// Funcao para criação das materias 
 function criarMaterias(materia) {
 
     const div = document.createElement("div");
@@ -43,7 +45,7 @@ function criarMaterias(materia) {
     p.classList.add("materia__descricao");
     p.textContent = materia.descricao;
 
-
+    // Adicionando elementos criados ao conteudo principal
     div.appendChild(conteudo);
     conteudo.appendChild(img);
     conteudo.appendChild(h3);
@@ -53,7 +55,8 @@ function criarMaterias(materia) {
 
 };
 
-for (let materia of conteudoMaterias){
+// Adiciona as materias ao conteúdo
+for (let materia of conteudoMaterias) {
     content.appendChild(criarMaterias(materia));
 }
 

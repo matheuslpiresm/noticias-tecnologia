@@ -1,0 +1,41 @@
+.materia {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 130px;
+    margin: 30px auto;
+    gap: 25px;
+    text-align: justify;
+    background-color: rgb(231, 231, 231);
+    position: relative;
+}
+
+.materia:hover {
+    cursor: pointer;
+}
+
+.materia__conteudo {
+    width: 80%;
+}
+
+.materia__img {
+    width: 20%;
+    height: 100%;
+}
+
+.materia__titulo {
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    padding: 5px 15px;
+}
+
+.materia__descricao {
+    font-size: 12px;
+    position: absolute;
+    top: 35%;
+    left: 21%;
+    padding: 15px;
+    font-weight: 200;
+}

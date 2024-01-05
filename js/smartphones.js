@@ -1,4 +1,4 @@
-// Dados das noticias
+// Conteudo das noticias
 const noticias = [
 
   {
@@ -20,7 +20,6 @@ const noticias = [
   }
 ];
 
-// Conteudo da section materias
 const content = document.getElementById("materias");
 
 // Funcao para criação das noticias
