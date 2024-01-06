@@ -10,17 +10,24 @@
     position: relative;
 }
 
-.materia:hover {
-    cursor: pointer;
+.materia__conteudo {
+    height: 100%;
 }
 
-.materia__conteudo {
-    width: 80%;
+.materia__conteudo__img {
+    width: 20%;
+    height: 100%;
+}
+
+.materia__conteudo__img:hover,
+.materia__titulo:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .materia__img {
-    width: 20%;
     height: 100%;
+    width: 100%;
 }
 
 .materia__titulo {
@@ -39,3 +46,4 @@
     padding: 15px;
     font-weight: 200;
 }
+
