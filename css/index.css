@@ -9,6 +9,11 @@
     background-color: rgb(231, 231, 231);
     position: relative;
     border-radius: 5px;
+    transition: transform 0.9s ease;
+}
+
+.materia:hover {
+    transform: scale(1.01);
 }
 
 .materia__conteudo {
@@ -49,4 +54,3 @@
     padding: 15px;
     font-weight: 200;
 }
-
